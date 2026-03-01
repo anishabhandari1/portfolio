@@ -13,26 +13,29 @@
   --color-dark-200: #1f1f1f;
   --color-dark-300: #2d2d2d;
   --color-dark-400: #3d3d3d;
-  --color-purple:#8B5CF6;
+  --color-purple:#F5AFAF;
   --color-pink:#EC4899;
   --color-blue:#3B82F6;
 }
 .typewriter{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #8B5CF6; /* The typewriter cursor */
+  border-right: .15em solid #F5AFAF; /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  width:0;
+  width: 0;
+  color: black;
+  /* animation duration and steps should match the number of characters in the text */
   animation:
-    typing 3.5s steps(20, end) forwards,
-    blink-caret .75s step-end infinite;
+    typing 3s steps(20, end) forwards,
+    blink-caret 0.75s step-end 4 forwards;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 15 }
+  /* animate to the exact character width rather than an arbitrary large value */
+  to { width: 20ch }
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #8B5CF6; }
+  50% { border-color: #F5AFAF; }
 }
