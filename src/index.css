@@ -25,17 +25,41 @@
   color: black;
   /* animation duration and steps should match the number of characters in the text */
   animation:
-    typing 3s steps(20, end) forwards,
-    blink-caret 0.75s step-end 4 forwards;
+    typing 2s steps(7, end) forwards,
+    blink-caret 0.75s step-end infinite 2s;
 }
 
 @keyframes typing {
   from { width: 0 }
   /* animate to the exact character width rather than an arbitrary large value */
-  to { width: 20ch }
+  to { width: 7ch }
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #F5AFAF; }
+}
+
+/* Custom cursor styles */
+body {
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.05s ease, color 0.15s ease;
+  color: #F5AFAF;
+}
+
+.cursor-hover:hover {
+  color: #FFFFFF;
+  transform: scale(1.2) translate3d(-50%, -50%, 0);
 }

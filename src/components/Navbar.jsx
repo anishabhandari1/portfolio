@@ -33,18 +33,13 @@ const Navbar = () => {
                     <span className= 'absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F5AFAF] transition-all duration-300 group-hover:w-full'></span>
                 </a>
                 
-                 <a href='#projects' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
-                    <span>Projects</span>
+                 <a href='#experience' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
+                    <span>Experience</span>
                     <span className= 'absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F5AFAF] transition-all duration-300 group-hover:w-full'></span>
                 </a>
                 
                  <a href='#education' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
                     <span>Education</span>
-                    <span className= 'absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F5AFAF] transition-all duration-300 group-hover:w-full'></span>
-                </a>
-            
-                 <a href='#experience' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
-                    <span>Experience</span>
                     <span className= 'absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F5AFAF] transition-all duration-300 group-hover:w-full'></span>
                 </a>
 
@@ -82,8 +77,8 @@ const Navbar = () => {
                     
                 </a>
                 
-                 <a onClick={()=>setShowMenu(!showMenu)} href='#projects' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
-                    <span>Projects</span>
+                 <a onClick={()=>setShowMenu(!showMenu)} href='#experience' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
+                    <span>Experience</span>
                     
                 </a>
                 
@@ -92,10 +87,7 @@ const Navbar = () => {
                     
                 </a>
             
-                 <a onClick={()=>setShowMenu(!showMenu)} href='#experience' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
-                    <span>Experience</span>
-                    
-                </a>
+                 
 
                 <a onClick={()=>setShowMenu(!showMenu)} href='#contact' className='relative text-black/80 transition-duration-300 hover:text-[#F5AFAF] group'>
                     <span>Contact</span>

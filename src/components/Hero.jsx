@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaDownload } from 'react-icons/fa'
 import { assets } from '../assets/assets'
 
 
@@ -20,12 +21,28 @@ const Hero = () => {
             <h1 className='text-4xl md:text-6xl font-bold mb-4 text-black'>
                 Hi, I'm <span className='text-[#F5AFAF]'>Anisha Bhandari</span>
             </h1>
-            <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter'>Full Stack Developer</h2>
-            <p className='text-lg text-black mb-8'>I build responsive and user-friendly web applications using modern technologies.</p>
-            <div className='flex space-x-4'>
-              <a href='#projects' className='px-6 py-3 bg-[#F5AFAF] rounded-lg font-medium hover:bg-[#F5AFAF]-700 transition duration-300'>View Work </a>
-              <a href='#contact' className='px-6 py-3 border-2 border-[#F5AFAF] rounded-lg font-medium hover:bg-[#F5AFAF] text-[#000000] transition'>Contact Me </a>
-              </div>
+            <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter'>Learner</h2>
+            <p className='text-lg text-black mb-8'>Passionate about learning, building, and growing in the tech and digital space.</p>
+            <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4'>
+              <motion.a 
+                href='/Anisha_Bhandari_adm(1)-Copy.pdf' 
+                download='Anisha_Bhandari_adm(1)-Copy.pdf'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='flex items-center justify-center gap-2 px-6 py-3 bg-[#F5AFAF] text-black rounded-lg font-medium hover:shadow-lg hover:shadow-[#F5AFAF]/40 transition duration-300'
+              >
+                <FaDownload size={16} />
+                Download CV
+              </motion.a>
+              <motion.a 
+                href='#contact' 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='flex items-center justify-center px-6 py-3 border-2 border-[#F5AFAF] text-black rounded-lg font-medium hover:bg-[#F5AFAF]/10 transition duration-300'
+              >
+                Contact Me
+              </motion.a>
+            </div>
             </div>
 
             {/*Right Side Content*/}

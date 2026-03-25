@@ -14,27 +14,6 @@ export const assets = {
 }
 
 
-export const aboutInfo = [
-    {
-      icon: FaLightbulb,
-      title: 'Innovative',
-      description: 'I love creating unique solutions to complex problems with cutting-edge technologies.',
-      color: 'text-purple'
-    },
-    {
-      icon: FaPaintBrush,
-      title: 'Design Oriented',
-      description: 'Beautiful design and user experience are at the heart of everything I create.',
-      color: 'text-pink'
-    },
-    {
-      icon: FaCode,
-      title: 'Clean Code',
-      description: 'I write maintainable, efficient code following best practices and modern patterns.',
-      color: 'text-blue'
-    }
-  ];
-
 
 
 export const skills = [
@@ -138,27 +117,30 @@ export const projects = [
 
 export const workData = [
   {
-    role: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    duration: "2020 - Present",
+    schoolname: "Amrit Science Campus",
+    location:" Lainchaur,Kathmandu",
+    degree: "Bsc.CSIT",
+    duration: "2023-Present",
     description:
-      "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
-    color: "purple"
+      "Pursuing a degree from Tribhuwan University.",
+    color: "[#F5AFAF]"
   },
   {
-    role: "Web Developer",
-    company: "Digital Solutions LLC",
-    duration: "2018 - 2020",
+    schoolname: "Rehdon College",
+    location:"Samakhusi-Kathmandu",
+    degree: "Higher Secondary Education",
+    duration: "2021-2023",
     description:
-      "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
-    color: "pink"
+      "Completed higher secondary education with a focus on science subjects, laying a strong foundation in mathematics and computer science",
+    color: "[#F5AFAF]"
   },
   {
-    role: "Junior Developer",
-    company: "StartUp Ventures",
-    duration: "2016 - 2018",
+   schoolname: "United English School ",
+   location:"Mechinagar-1, Jhapa",
+   degree: "Secondary Education",
+    duration: "2011-2021",
     description:
-      "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
-    color: "blue"
+      "Completed secondary education with a strong foundation in base of mathematics and other subjects, fostering a love for learning and critical thinking.",
+    color: "[#F5AFAF]" 
   }
 ];

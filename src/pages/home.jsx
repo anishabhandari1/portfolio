@@ -2,15 +2,22 @@ import React from 'react'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Education from '../components/Education'
+import Experience from '../components/Experience'
+import Contact from '../components/Contact'
 
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <h2 className="text-black">Home Page</h2>
       <About/>
       <Skills/>
+
+      <Education/>
+      <Experience/>
+      <Contact/>
+
     </div>
   )
 }
