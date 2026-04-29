@@ -293,17 +293,17 @@ const Contact = () => {
 
             {/* Response Time Info */}
             <motion.div
-              variants={itemVariants}
+            
               className='mt-8 p-6 bg-[#F5AFAF]/5 border border-[#F5AFAF]/20 rounded-xl'
             >
-              <p className='text-black font-medium mb-2'>📧 Response Time</p>
-              <p className='text-gray-600 text-sm'>
-                I typically respond to messages within 24-48 hours. Looking forward to connecting with you!
-              </p>
+
             </motion.div>
           </motion.div>
         </div>
       </div>
+      <footer className="text-center py-6 text-sm text-gray-500">
+  © {new Date().getFullYear()} Anisha Bhandari. All Rights Reserved.
+</footer>
     </motion.section>
   )
 }
