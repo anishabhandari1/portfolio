@@ -79,8 +79,12 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.3 }}
           className='text-center mb-16'
         >
+          <div className='inline-flex items-center gap-3 rounded-full border border-black/10 bg-black/5 px-4 py-2 text-sm font-medium text-black/80 mb-4'>
+            <span className='inline-flex h-2.5 w-2.5 rounded-full bg-black animate-pulse' />
+            Ready to Work
+          </div>
           <motion.h2 variants={itemVariants} className='text-4xl md:text-5xl font-bold mb-4'>
-            Contact<span className='text-[#F5AFAF]'>Me</span>
+            Contact<span className='text-black'>Me</span>
           </motion.h2>
           <motion.p variants={itemVariants} className='text-gray-600 text-lg max-w-2xl mx-auto'>
             Let's collaborate and bring your ideas to life. Feel free to reach out through any of the methods below.
@@ -116,7 +120,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder='Enter your name'
-                    className='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5AFAF] focus:border-transparent transition duration-300 hover:border-gray-300'
+                    className='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition duration-300 hover:border-gray-300'
                   />
                 </motion.div>
 
@@ -133,7 +137,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder='your@email.com'
-                    className='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5AFAF] focus:border-transparent transition duration-300 hover:border-gray-300'
+                    className='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition duration-300 hover:border-gray-300'
                   />
                 </motion.div>
 
@@ -150,7 +154,7 @@ const Contact = () => {
                     required
                     rows='5'
                     placeholder='Any Message?'
-                    className='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5AFAF] focus:border-transparent transition duration-300 hover:border-gray-300 resize-none'
+                    className='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition duration-300 hover:border-gray-300 resize-none'
                   />
                 </motion.div>
 
@@ -182,7 +186,7 @@ const Contact = () => {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className='w-full px-6 py-3 bg-[#F5AFAF] text-black font-semibold rounded-lg transition duration-300 hover:shadow-lg hover:shadow-[#F5AFAF]/40 disabled:opacity-70 disabled:cursor-not-allowed'
+                  className='w-full px-6 py-3 bg-black text-white font-semibold rounded-lg transition duration-300 hover:shadow-lg hover:shadow-black/40 disabled:opacity-70 disabled:cursor-not-allowed'
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </motion.button>
@@ -205,10 +209,10 @@ const Contact = () => {
                 variants={itemVariants}
                 href='mailto:anishabhandari012@gmail.com'
                 whileHover={{ x: 10 }}
-                className='flex items-start gap-4 p-6 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-100 hover:border-[#F5AFAF] transition duration-300 group cursor-pointer'
+                className='flex items-start gap-4 p-6 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-100 hover:border-black transition duration-300 group cursor-pointer'
               >
-                <div className='w-14 h-14 bg-[#F5AFAF]/10 rounded-lg flex items-center justify-center group-hover:bg-[#F5AFAF]/20 transition duration-300'>
-                  <FaEnvelope className='text-[#F5AFAF] text-xl' />
+                <div className='w-14 h-14 bg-black/10 rounded-lg flex items-center justify-center group-hover:bg-black/20 transition duration-300'>
+                  <FaEnvelope className='text-black text-xl' />
                 </div>
                 <div>
                   <h4 className='text-black font-semibold mb-1'>Email</h4>
@@ -227,10 +231,10 @@ const Contact = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   whileHover={{ x: 10 }}
-                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-[#F5AFAF] transition duration-300 group'
+                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-black transition duration-300 group'
                 >
-                  <div className='w-12 h-12 bg-[#F5AFAF]/10 rounded-lg flex items-center justify-center group-hover:bg-[#F5AFAF]/20 transition duration-300'>
-                    <FaGithub className='text-[#F5AFAF] text-lg' />
+                  <div className='w-12 h-12 bg-black/10 rounded-lg flex items-center justify-center group-hover:bg-black/20 transition duration-300'>
+                    <FaGithub className='text-black text-lg' />
                   </div>
                   <div>
                     <p className='text-black font-medium'>GitHub</p>
@@ -245,10 +249,10 @@ const Contact = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   whileHover={{ x: 10 }}
-                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-[#F5AFAF] transition duration-300 group'
+                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-black transition duration-300 group'
                 >
-                  <div className='w-12 h-12 bg-[#F5AFAF]/10 rounded-lg flex items-center justify-center group-hover:bg-[#F5AFAF]/20 transition duration-300'>
-                    <FaLinkedin className='text-[#F5AFAF] text-lg' />
+                  <div className='w-12 h-12 bg-black/10 rounded-lg flex items-center justify-center group-hover:bg-black/20 transition duration-300'>
+                    <FaLinkedin className='text-black text-lg' />
                   </div>
                   <div>
                     
@@ -262,10 +266,10 @@ const Contact = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   whileHover={{ x: 10 }}
-                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-[#F5AFAF] transition duration-300 group'
+                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-black transition duration-300 group'
                 >
-                  <div className='w-12 h-12 bg-[#F5AFAF]/10 rounded-lg flex items-center justify-center group-hover:bg-[#F5AFAF]/20 transition duration-300'>
-                    <FaInstagram className='text-[#F5AFAF] text-lg' />
+                  <div className='w-12 h-12 bg-black/10 rounded-lg flex items-center justify-center group-hover:bg-black/20 transition duration-300'>
+                    <FaInstagram className='text-black text-lg' />
                   </div>
                   <div>
                     <p className='text-black font-medium'>Instagram</p>
@@ -278,10 +282,10 @@ const Contact = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   whileHover={{ x: 10 }}
-                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-[#F5AFAF] transition duration-300 group'
+                  className='flex items-center gap-4 p-4 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 hover:border-black transition duration-300 group'
                 >
-                  <div className='w-12 h-12 bg-[#F5AFAF]/10 rounded-lg flex items-center justify-center group-hover:bg-[#F5AFAF]/20 transition duration-300'>
-                    <FaFacebook className='text-[#F5AFAF] text-lg' />
+                  <div className='w-12 h-12 bg-black/10 rounded-lg flex items-center justify-center group-hover:bg-black/20 transition duration-300'>
+                    <FaFacebook className='text-black text-lg' />
                   </div>
                   <div>
                     <p className='text-black font-medium'>Facebook</p>
@@ -294,7 +298,7 @@ const Contact = () => {
             {/* Response Time Info */}
             <motion.div
             
-              className='mt-8 p-6 bg-[#F5AFAF]/5 border border-[#F5AFAF]/20 rounded-xl'
+              className='mt-8 p-6 bg-black/5 border border-black/10 rounded-xl'
             >
 
             </motion.div>

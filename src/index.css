@@ -13,13 +13,13 @@
   --color-dark-200: #1f1f1f;
   --color-dark-300: #2d2d2d;
   --color-dark-400: #3d3d3d;
-  --color-purple:#F5AFAF;
-  --color-pink:#EC4899;
+  --color-black:#0A0A0A;
+  --color-pink:#0A0A0A;
   --color-blue:#3B82F6;
 }
 .typewriter{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #F5AFAF; /* The typewriter cursor */
+  border-right: .15em solid #0A0A0A; /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   width: 0;
   color: black;
@@ -37,7 +37,7 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #F5AFAF; }
+  50% { border-color: #0A0A0A; }
 }
 
 /* Custom cursor styles */
@@ -56,7 +56,7 @@ body {
   left: 0;
   transform: translate3d(-50%, -50%, 0);
   transition: transform 0.05s ease, color 0.15s ease;
-  color: #F5AFAF;
+  color: #0A0A0A;
 }
 
 .cursor-hover:hover {

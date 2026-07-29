@@ -54,12 +54,8 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.3 }}
           className='text-center mb-16'
         >
-          <h2 className='text-4xl md:text-5xl font-bold mb-4'>Expe
-            <span className='text-[#F5AFAF]'>rience</span>
-          </h2>
-          <p className='text-gray-600 text-lg max-w-2xl mx-auto'>
-            A curated snapshot of your professional and freelance work.
-          </p>
+          <h2 className='text-4xl md:text-5xl font-bold mb-4 text-black'>Experience</h2>
+          <p className='text-gray-600 text-lg max-w-2xl mx-auto'>A snapshot of digital marketing experience and the tools used.</p>
         </motion.div>
 
         <motion.div
@@ -67,27 +63,32 @@ const Experience = () => {
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.3 }}
-          className='grid gap-6 md:grid-cols-2'
+          className='max-w-4xl mx-auto'
         >
-          {experienceData.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className='bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300'
-            >
-              <div className='flex items-center gap-3 mb-3'>
-                <div className='p-2 bg-[#F5AFAF]/20 rounded-lg'>
-                  <FaBriefcase className='text-[#F5AFAF] w-5 h-5' />
-                </div>
-                <div>
-                  <h3 className='text-xl font-semibold'>{item.role}</h3>
-                  <p className='text-sm text-gray-500'>{item.company}</p>
-                </div>
+          <motion.div
+            variants={itemVariants}
+            className='rounded-3xl border border-black/10 bg-gradient-to-br from-white to-gray-50 p-10 shadow-lg shadow-black/5'
+          >
+            <div className='flex items-center gap-4 mb-6'>
+              <div className='flex h-12 w-12 items-center justify-center rounded-2xl bg-black/10'>
+                <FaBriefcase className='text-black text-lg' />
               </div>
-              <p className='text-sm text-[#F5AFAF] font-medium mb-2'>{item.duration}</p>
-              <p className='text-gray-600'>{item.details}</p>
-            </motion.div>
-          ))}
+              <div>
+                <p className='text-sm uppercase tracking-[0.3em] text-black/50'>Experience</p>
+                <h3 className='text-3xl font-bold text-black'>1+ Year Experience in Digital Marketing</h3>
+              </div>
+            </div>
+
+            <div className='rounded-3xl border border-black/10 bg-white p-6'>
+              <h4 className='text-xl font-semibold text-black mb-4'>Works Done on</h4>
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 text-black/80'>
+                <span className='rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm'>Web Content Writing</span>
+                <span className='rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm'>SEO</span>
+                <span className='rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm'>Social Media Marketing</span>
+                <span className='rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm'>Project Management</span>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </motion.section>

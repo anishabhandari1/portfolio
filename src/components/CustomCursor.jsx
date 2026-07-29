@@ -3,7 +3,7 @@ import { FaRocket } from 'react-icons/fa'
 
 const CustomCursor = () => {
   const cursorRef = useRef(null)
-  const [cursorColor, setCursorColor] = useState('#F5AFAF')
+  const [cursorColor, setCursorColor] = useState('#0A0A0A')
 
   useEffect(() => {
     const cursor = cursorRef.current
@@ -25,7 +25,7 @@ const CustomCursor = () => {
         if (bgColor.includes('245, 175, 175') || bgColor.includes('rgb(245, 175, 175)') || hasDataPink) {
           setCursorColor('white')
         } else {
-          setCursorColor('#F5AFAF')
+          setCursorColor('#0A0A0A')
         }
       }
     }
